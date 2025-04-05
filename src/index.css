@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+* {
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+@font-face {
+  font-family: 'acad_nusx';
+  src: url('fonts/acad_nusx_geo_FIXED.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.custom-font p{
+  font-family: 'acad_nusx', sans-serif;
+}
+
+blockquote {
+  @apply w-full max-w-[448px] py-2 px-6 border-l-4 border-solid border-black;
+}

@@ -16,7 +16,7 @@ const App = () => {
     // Fetch the fonts list from the static JSON file
     const loadFonts = async () => {
       try {
-        const response = await fetch('/fonts.json')
+        const response = await fetch(`${import.meta.env.BASE_URL}/fonts.json`)
         const data = await response.json()
         setFonts(data.fonts)
         setFilteredFonts(data.fonts)
@@ -49,7 +49,7 @@ const App = () => {
   return (
     <Container className="flex flex-col gap-4 px-4 pb-[200px] pt-8">
       <header>
-        <img src="/logo.svg" />
+        <img src="/fontsge-fixed/logo.svg" />
       </header>
       <p>
         FONTS.GE საიტზე 898 ფონტიდან ~411-ს <b>(~46%!)</b> აქვს ლათინური
@@ -133,7 +133,7 @@ const App = () => {
             <a
               key={index}
               className="flex cursor-pointer items-center justify-between rounded-[8px] bg-[#eee] px-4 py-3"
-              href={`/fonts/${font}`}
+              href={`${import.meta.env.BASE_URL}/fonts/${font}`}
               download
               aria-label={`Download ${font}`}
             >

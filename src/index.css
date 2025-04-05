@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'acad_nusx';
-  src: url('fonts/acad_nusx_geo_FIXED.ttf') format('truetype');
+  src: url('/fontsge-fixed/fonts/acad_nusx_geo_FIXED.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
